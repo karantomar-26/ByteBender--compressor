@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ByteBender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-screen w-screen m-0 p-0 flex justify-center items-center bg-zinc-700">
+    <div class="bg-white p-8 rounded-lg shadow-md text-center fade-in">
+      <h1 class="text-2xl font-bold mb-4">Huffman Coding Compression</h1>
+      <input type="file" id="fileInput" accept=".txt" class="mb-4 px-4 py-2 border rounded" />
+      <button id="compressButton" class="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+        Compress
+      </button>
+      <pre id="result" class="bg-gray-200 p-4 rounded-lg text-left">Result</pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </body>
+</html>

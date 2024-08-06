@@ -1,0 +1,111 @@
+/* styles.css */
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("fonts/TomatoGrotesk-Medium.BzqDELbt.ttf") format("truetype");
+  font-weight: 500; /* Adjust this value if Medium has a different weight */
+}
+
+@font-face {
+  font-family: "TomatoGrotesk";
+  src: url("fonts/TomatoGrotesk-SemiBold.C_6lu3PJ.ttf") format("truetype");
+  font-weight: 600; /* Adjust this value if SemiBold has a different weight */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* adjust the color to your liking */
+}
+
+body {
+  font-family: "TomatoGrotesk", sans-serif;
+  font-weight: 500; /* Start with Medium */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.man {
+  position: fixed;
+  top: 50%;
+  left: 58%;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+pre {
+  margin-top: 20px;
+  text-align: left;
+  white-space: pre-wrap;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes compressAnimation {
+  from {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.compress-animation {
+  animation: compressAnimation 0.5s ease-in-out;
+}
